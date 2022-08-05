@@ -1,3 +1,15 @@
+# This issue has been resolved
+
+Issue https://github.com/dolthub/vitess/issues/174 has been resolved by merging
+https://github.com/dolthub/vitess/pull/175, and dolthub/go-mysql-server no
+longer has any flag collision issues with Vitess.
+
+
+# For posterity
+
+Prior to commit `c7560b3fabf0d1fcdaf845662b921c5187eb9320`, the
+`go-mysql-server` package defined flags that conflicted with Vitess.
+
 ```
 go test src/my_test.go
 ```
